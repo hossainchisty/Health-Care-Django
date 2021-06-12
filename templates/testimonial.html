@@ -1,0 +1,28 @@
+{% load static %}
+<!--testimonial-->
+  <section id="testimonial" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          HAPPY PATIENTS
+          <h2 class="ser-title">see what patients are saying?</h2>
+          <hr class="botm-line">
+        </div>
+        {% for testimonial in testimonial_list %}
+        <div class="col-md-4 col-sm-4">
+          <div class="testi-details">
+            <!-- Paragraph -->
+            <p>{{ testimonial.description }}</p>
+          </div>
+          <div class="testi-info">
+            <!-- User Image -->
+            <a href="#"><img src="{{ testimonial.image.url }}" alt="{{ testimonial.title}}" class="img-responsive"></a>
+            <!-- User Name -->
+            <h3>{{ testimonial.title}}<span></span></h3>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!--/ testimonial-->

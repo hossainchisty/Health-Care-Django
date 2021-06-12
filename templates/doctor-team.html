@@ -1,0 +1,45 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block maincontent %}
+  <div class="col-md-5">
+    <ol class="breadcrumb">
+      <li><a class="text-primary" href="{% url 'hospital' %}">Home</a></li>
+      <li class="text-primary">Doctors</li>
+    </ol>
+  </div>
+  <!--doctor team-->
+  <section id="doctor-team" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Meet Our Doctors!</h2>
+          <hr class="botm-line">
+        </div>
+        {% for doctor in object_list %}
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="{{ doctor.picture.url }}" alt="{{ doctor.name }}" class="team-img">
+            <div class="caption">
+              <h3>Dr. {{ doctor.name }}</h3>
+              <p>{{ doctor.speciality}}</p>
+              <ul class="list-inline">
+                {% if doctor.facebook %}
+                <li><a href="{{ doctor.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                {% endif %}
+                {% if doctor.twitter %}
+                <li><a href="{{ doctor.twitter }}"><i class="fa fa-twitter"></i></a></li>
+                {% endif %}
+                {% if doctor.instagram %}
+                <li><a href="{{ doctor.instagram }}"><i class="fa fa-instagram"></i></a></li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!--/ doctor team-->
+
+{% endblock maincontent %}
