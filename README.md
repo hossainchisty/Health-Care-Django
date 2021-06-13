@@ -3,6 +3,11 @@
 HealthCare is a diagonostic management project developed in django. Admin can add doctor, User can see doctors profile and also they can make appointment. 
 They can also contact to the HealthCare through email.
 
+
+### Setup, Installation and Run
+
+To run the app on your local machine, you need Python 3+, installed on your computer. Follow all the steps to run this project.
+
 1.  Create virtual environment:
 ```bash
 virtualenv env_name
