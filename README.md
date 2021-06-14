@@ -29,7 +29,7 @@ git clone https://github.com/hossainchisty/Health-Care-Django.git
 cd Health-Care-Django
 ```
 5. Install dependencies
-```python
+```bash
   pip install -r requirements.txt
 ``` 
 
