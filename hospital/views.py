@@ -1,10 +1,8 @@
 from django.shortcuts import render,redirect
-from django.core.mail import send_mail, EmailMultiAlternatives
-from django.template.loader import get_template
 from django.contrib import messages
 from django.views.generic import ListView, DetailView, TemplateView
 from .models import Doctor
-# from django.conf import settings
+
 
 class hospitalView(TemplateView):
     template_name = 'index.html'
@@ -40,19 +38,3 @@ class ContactView(TemplateView):
 
         return redirect('contact')
 
-
-
-
-
-
-
-
-# def contact(request):
-#     return render(request, 'contact.html')
-
-
-# def about(request):
-#     return render(request, 'about.html')
-    
-# def testimonial(request):
-#     return render(request, 'testimonial.html')
