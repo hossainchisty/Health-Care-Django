@@ -37,7 +37,7 @@ cd Health-Care-Django
 ```python
   python manage.py runserver
 ```
-7.Then go to ```http://127.0.0.1:8000``` in your browser
+7.Then go to ```http://127.0.0.1:8000``` in your browser.
 
 ### To create superuser open terminal and type
 ```
