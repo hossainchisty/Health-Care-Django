@@ -54,4 +54,5 @@ EMAIL_HOST_USER = 'your email'
 EMAIL_HOST_PASSWORD = 'your email password'
 ```
 Thanks ❤ Happy Coding 🎉
-
+<br>
+Author: Hossain Chisty
