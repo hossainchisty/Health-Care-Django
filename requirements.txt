@@ -3,7 +3,7 @@ crispy-tailwind==0.5.0
 Django==3.2.12
 django-3-jet==1.0.8
 django-crispy-forms==1.11.2
-Pillow==9.0.0
+Pillow==9.0.1
 pytz==2021.1
 six==1.16.0
 sqlparse==0.4.2
