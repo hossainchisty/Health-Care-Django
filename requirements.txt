@@ -6,4 +6,4 @@ django-crispy-forms==1.11.2
 Pillow==9.0.1
 pytz==2021.1
 six==1.16.0
-sqlparse==0.4.2
+sqlparse==0.4.4
